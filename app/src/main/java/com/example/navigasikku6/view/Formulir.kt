@@ -34,6 +34,17 @@ fun FormIsian(
     jenisJk:List<String> = listOf("Laki-laki", "Perempuan"),
     OnSubmitBtnClick : () -> Unit
 ){
-                }
+    Scaffold (modifier= Modifier,
+        topBar= {
+            TopAppBar(
+
+                )}
+            ) { isiRuang ->
+        Column(
+            modifier = Modifier.padding(paddingValues = isiRuang),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
         }
+    }
 }
