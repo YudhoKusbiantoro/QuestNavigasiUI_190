@@ -17,14 +17,7 @@ enum class Navigasi {
     Detail
 }
 
-                )
-            }
-        }
-    }
-}
-
-private fun cancelAndBackToFormulir(
-    navController: NavHostController
-) {
-    navController.popBackStack(Navigasi.Formulirku.name, inclusive = false)
-}
+@Composable
+fun DataApp(
+    navController: NavHostController = rememberNavController()
+)
